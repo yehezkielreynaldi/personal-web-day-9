@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li><img src="assets/images/logo.png" alt="Dumbways_logo" /></li>
+          <li class="item-collapse"><a href="index.html">Home</a></li>
+          <li class="item-collapse"><a href="blog.html">Blog</a></li>
+          <li class="item-collapse">
+            <a href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <div class="nav-active">
+        <a
+          href="contact.html"
+          class="hamburger-active"
+          style="
+            background-color: orangered;
+            height: 20px;
+            width: 100px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+          "
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <form>
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" height="100" type="text" required />
+      </div>
+      <div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
+      </div>
+      <div>
+        <label for="input-phone">Phone Number</label>
+        <input id="input-phone" type="number" required />
+      </div>
+      <div>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject">
+          <option value="" hidden>Select</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Fullstack</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-message">Your Messages</label>
+        <textarea id="input-message" cols="10" rows="5"></textarea>
+      </div>
+      <div class="button-submit">
+        <button type="button" onclick="submitData()">Submit</button>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

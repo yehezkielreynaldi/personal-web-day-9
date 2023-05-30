@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    background-color: #ebeaea;
+    display: flex;
+    align-items: center; /* Rata Atas bawah*/
+    /* justify-content: center; Rata Kanan Kiri */
+    height: 10vh;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li .active {
+color: orangered;
+}
+
+/* nav ul li #active {
+    color: aqua;
+} */
+
+.nav-left {
+    /* Mengatur Lebarnya */
+    flex : 50%;
+
+
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+.nav-right a {
+background-color: orangered;
+padding: 8px 20px;
+color: white;
+border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* height: 90vh; */
+    align-items: center;
+    margin: 50px 0;
+}
+
+section {
+    display: flex;
+    width: 80%;
+}
+
+.left {
+    flex: 30%;
+    font-size: 15px;
+}
+
+#foto-saya {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px;
+
+}
+
+.card-left {
+    width: 350px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #cecece;
+}
+
+.selain-foto {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.table-left {
+        border: 1px solid grey;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+}
+
+.right {
+    flex: 70%;
+    /* margin-top: -25px; */
+    margin-left: 50px;
+}
+
+.skill {
+    display: flex;
+    margin-top: 30px;
+}
+
+#js-foto{
+    width: 80px;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-media i {
+    margin-right: 20px;
+    font-size: 30px;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    color: black;
+}
+
+#barsmenu {
+    display: none;
+}
+
+.hamburger-nav-container {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger-nav-container a {
+    color: white;
+    text-decoration: none;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+    color: white;
+        text-decoration: none;
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid white;
+}
+
+@media only screen and (max-width: 900px) {
+.card-left {
+    width: 100%;
+}
+
+.left {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    margin-left: 0;
+}
+
+section {
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+@media only screen and (max-width: 550px) {
+    .skill {
+        flex-direction: column;
+    }
+
+    .item-collapse {
+        display: none;
+    }
+
+    #barsmenu {
+        display: block;
+    }
+}
